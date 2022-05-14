@@ -1,4 +1,6 @@
-# my-custom-tabs / html&css
+# my-custom-tabs
+
+1. **HTML & CSS**
 
 Aşağıdaki kod satırlarını da ilgili html sayfamızın içerisine <style></style> tagları içerisinde veya ilgili html sayfasına bağlı olan bir css dosyası içerisine entegre edelim.
  
@@ -85,4 +87,111 @@ Aşağıdaki kod yapısını html kodunuzun içerisine entegre edelim.
     </div>
 
 
+
+
+
+2. **HTML & CSS & JAVASCRIPT**
+
+Not: Javascript kullanarak bir tab yapmak istiyorsak aşağıdaki kod satırlarını sayfamıza ekleyelim.
+
+İlgili Css Kodu
+
+    body{
+        background-color:rgb(196, 192, 192);
+    }
+    .myTabs{
+        max-width: 500px;
+        margin:25px auto;
+    }
+    .myTabs .tabsContent{
+        font-family:Arial, Helvetica, sans-serif;
+        width:100%;
+    }
+    .myTabs .tabsTitle .tabButton{
+        background-color:gray;
+        font-family: 'Arial';
+        color:white;
+        font-size:16px;
+        text-decoration: none;
+        padding:10px 25px;
+        outline:none;
+        border:none;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .myTabs .tabsTitle .tabButton.active{
+        background-color:#ffffff;
+        color:gray;
+    }
+    .myTabs .tabsContent .tabContent{
+        height: 300px;
+        padding:10px 20px;
+        display:none;
+        font-size: 14px;
+        background-color:#ffffff;
+        height: auto;
+    }
+    .myTabs .tabsContent .tabContent:first-child{
+        display:block;
+    }
+
+
+<!----------------------------------------------------------------------------->
+
+İlgili Html kodu
  
+    <div class="myTabs">
+        <div class="tabsTitle">
+            <label class="tabButton active" id="tabBttn1" onclick="myTabSelector('tab1', this.id)">Tab 1</label>
+            <label class="tabButton" id="tabBttn2" onclick="myTabSelector('tab2', this.id)">Tab 2</label>
+            <label class="tabButton" id="tabBttn3" onclick="myTabSelector('tab3', this.id)">Tab 3</label>
+        </div>
+        <div class="tabsContent">
+            <div id="tab1" class="tabContent">
+                <h2>Tab Content 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ex. Dolorum corporis deserunt laboriosam culpa maxime cum suscipit magni, accusamus dolor ad incidunt aperiam eligendi iste ex voluptatum sit facilis eaque. Soluta quis alias officia sequi id consequatur inventore expedita culpa atque vitae odit officiis maxime, enim nihil magni recusandae maiores nulla ullam, cupiditate ipsa aliquam tenetur itaque! Reprehenderit, nemo possimus, facilis soluta eveniet iure vel nihil odit earum illum officia illo delectus consectetur perferendis error incidunt vero et sunt eos. Hic, atque laborum, voluptate totam deleniti non rerum porro quae iusto eos libero quasi sit consequatur animi expedita est?
+                </p>
+            </div>
+            <div id="tab2" class="tabContent">
+                <h2>Tab Content 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus debitis mollitia inventore sequi sint suscipit ex sunt aspernatur numquam neque consectetur ducimus, libero distinctio rerum tenetur quae aliquam ipsam eum nobis, praesentium accusantium nemo. Voluptatem vero omnis doloribus, quod sunt iure dolore, commodi tempora, fugit nobis molestiae totam tempore nemo.</p>
+
+            </div>
+            <div id="tab3" class="tabContent">
+                <h2>Tab Content 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis tempore esse quo rem, earum ratione reiciendis nam quidem eveniet quos, veritatis pariatur inventore aliquam, minima vel commodi atque! Dolor eligendi accusantium reprehenderit atque, recusandae deserunt unde assumenda laborum eaque quis fugit doloremque molestiae officiis, ex fuga harum reiciendis vitae consectetur obcaecati cum, adipisci asperiores quod? Rem hic est recusandae nobis assumenda tempore et fugit veniam praesentium. Quis pariatur voluptates error doloribus in libero et id, architecto ipsum fuga magni ea, laudantium velit. Magni, eligendi. Odio perferendis, unde esse dolorem ratione minus nostrum quam culpa, soluta debitis quia cumque a officia ipsam numquam quas reprehenderit labore exercitationem, totam voluptatum quisquam accusamus autem alias! Provident, voluptates earum eaque vel ad reiciendis voluptatum voluptas laborum eius consectetur ex praesentium eveniet, laboriosam accusamus incidunt! Nemo sed harum consequatur eos fugit facilis laborum? Saepe omnis quas eveniet voluptas rem aliquam labore, dicta quibusdam laudantium animi.</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+<!------------------------------------------------------------------------------------------>
+ 
+ İlgili Javascript kodu
+  
+       /*Seçili içerik alanın açılması*/
+        function myTabSelector(deger,tabId){
+            allTabContentHide();
+            document.getElementById(deger).style.display = "block";
+            selectedTabBttn(tabId);
+        }
+
+        /*Tüm İçerik alanlarının silinmesi*/
+        function allTabContentHide(){
+            const tabs = document.querySelector(".tabsContent");
+            const alanlar = tabs.querySelectorAll("div.tabContent");
+            for (var baslangic = 0; baslangic < alanlar.length; baslangic++){
+                alanlar[baslangic].style.display = "none"; 
+            }
+        }
+
+        /*Seçili butonun aktif olma özelliği verilmesi*/
+        function selectedTabBttn(tabId){
+            var tabButtons= document.getElementsByClassName("tabButton");
+            for (var baslangic = 0; baslangic < tabButtons.length; baslangic++){
+                tabButtons[baslangic].classList.remove("active")
+            }
+            document.getElementById(tabId).classList.add("active");
+        }
