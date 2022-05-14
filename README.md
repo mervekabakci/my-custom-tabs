@@ -2,6 +2,8 @@
 
 1. **HTML & CSS**
 
+Html Örnek için klasör içerisindeki 01-only-html-css.html dosyasını inceleyebilirsiniz. 
+
 Aşağıdaki kod satırlarını da ilgili html sayfamızın içerisine <style></style> tagları içerisinde veya ilgili html sayfasına bağlı olan bir css dosyası içerisine entegre edelim.
  
        body{
@@ -91,6 +93,8 @@ Aşağıdaki kod yapısını html kodunuzun içerisine entegre edelim.
 
 
 2. **HTML & CSS & JAVASCRIPT**
+
+Javascript ile tab örnek için klasör içerisindeki 02-html-css-javascript.html dosyasını inceleyebilirsiniz. 
 
 Not: Javascript kullanarak bir tab yapmak istiyorsak aşağıdaki kod satırlarını sayfamıza ekleyelim.
 
