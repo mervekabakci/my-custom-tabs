@@ -1,4 +1,4 @@
-# my-custom-tabs
+# my-custom-tabs / html&css
 
 Aşağıdaki kod satırlarını da ilgili html sayfamızın içerisine <style></style> tagları içerisinde veya ilgili html sayfasına bağlı olan bir css dosyası içerisine entegre edelim.
  
