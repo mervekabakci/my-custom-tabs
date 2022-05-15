@@ -2,6 +2,10 @@
 1. **HTML & CSS**
 2. **HTML & CSS & JAVASCRIPT**
 
+   **-2.1. Versiyon 1**
+   
+   **-2.1. Versiyon 2**
+
 <------------------------------------------------------------------------------------>
 1. **HTML & CSS**
 
@@ -100,6 +104,8 @@ Aşağıdaki kod yapısını html kodunuzun içerisine entegre edelim.
 Javascript ile tab örnek için klasör içerisindeki 02-html-css-javascript.html dosyasını inceleyebilirsiniz. 
 
 Not: Javascript kullanarak bir tab yapmak istiyorsak aşağıdaki kod satırlarını sayfamıza ekleyelim.
+
+**2.1. Versiyon 1**
 
 İlgili Css Kodu
 
@@ -201,3 +207,108 @@ Not: Javascript kullanarak bir tab yapmak istiyorsak aşağıdaki kod satırlar�
             }
             document.getElementById(tabId).classList.add("active");
         }
+        
+<--------------------------------------------------------------------------------------------------------------------------->
+
+**2.1. Versiyon 2**
+
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color:#c4c0c0;
+    }
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .myTabs{
+        max-width: 500px;
+        margin:25px auto;
+    }
+    .tabButton{
+        background-color:gray;
+        font-family: 'Arial';
+        color:white;
+        font-size:16px;
+        text-decoration: none;
+        padding:20px 25px;
+        outline:none;
+        border:none;
+        float: left;
+        width: 25%;
+        cursor: pointer;
+        transition:all .3s ease-in-out;
+        border-left:1px solid lightgray;
+    }
+    .tabButton:first-child{
+        border-left:none;
+    }
+    .tabButton:hover{
+        background-color:#686262;
+    }
+    .tabContent{
+        padding:70px 20px 20px;
+        font-size: 14px;
+        background-color:#ffffff;
+        height: auto;
+        display: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .tabContent p{
+        text-align: justify;
+    }
+
+
+<!-------------------------------------------------------------------------------------------------->
+
+ <!--Tab Button Oluşturma-->
+    <button id="defaultOpen" class="tabButton" onclick="openTab('tab1', this)">Tab 1</button>
+    <button class="tabButton" onclick="openTab('tab2', this)">Tab 2</button>
+    <button class="tabButton" onclick="openTab('tab3', this)">Tab 3</button>
+    <button class="tabButton" onclick="openTab('tab4', this)">Tab 4</button>
+
+    <!--Tab İçerik alanı olusturma-->
+    <div id="tab1" class="tabContent">
+        <h2>Tab 1 İçerik</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, porro eius pariatur beatae velit harum error enim, tempore non labore, nostrum ea asperiores quaerat itaque vero aliquam! Dolorem maxime quasi ad unde minus aut minima, iste repellat similique harum placeat ipsam ut consequuntur id, pariatur ea veritatis maiores blanditiis tempore. Neque deleniti quas libero reprehenderit distinctio, maxime atque placeat iusto dolorum unde eum minima ratione obcaecati molestias, rem, fuga veniam perferendis laborum corrupti sint suscipit debitis. Sequi vel voluptas ipsam harum architecto reprehenderit repudiandae, distinctio totam natus eos, nostrum mollitia non voluptatum accusantium veniam sapiente, minima ullam? Eaque, laboriosam praesentium?</p>
+    </div>
+    <div id="tab2" class="tabContent">
+        <h2>Tab 2 İçerik</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, fugit sint ab voluptatum esse dolores adipisci, itaque ipsa repudiandae qui iste aspernatur atque asperiores, eius possimus deleniti quod. Eius repudiandae temporibus id voluptates ab quidem maiores aut eligendi similique ad, autem molestias pariatur architecto obcaecati doloribus, modi veritatis culpa hic perspiciatis! Adipisci libero eveniet, voluptas iusto cumque dignissimos sequi consequuntur impedit consectetur error vitae voluptates reiciendis velit laudantium sunt fuga mollitia. Impedit, ut reiciendis nesciunt distinctio officia hic cumque in ullam, ducimus fugit repudiandae sint quidem similique. Ut veritatis distinctio labore repellendus nisi sapiente, aliquid accusamus quam. Natus ipsam quasi earum minus voluptate. Iure aut totam fugit numquam distinctio qui quibusdam fuga assumenda perspiciatis consectetur commodi ad voluptas eveniet non porro, reprehenderit et at corrupti ipsam molestiae debitis ea nisi accusamus? Eveniet laudantium eos repellendus rerum corporis expedita non itaque veritatis tempora excepturi deserunt cum quo odio, ut et ipsam mollitia. Obcaecati quis deleniti perspiciatis consectetur culpa cumque maxime optio accusamus sit iste ipsam dicta ab pariatur fuga nisi, maiores saepe natus autem magni ex alias rem dolor architecto. Odit accusantium eveniet quibusdam impedit excepturi maiores fugiat repudiandae tempora, saepe amet ad sit rerum veniam nostrum consequatur pariatur sunt, ducimus vel ipsam! Fugit nostrum nam autem vel quos possimus ea debitis aperiam enim optio, quaerat maxime fuga saepe soluta beatae, dolorum esse. Unde ipsum vitae voluptatum perspiciatis eos eius tenetur adipisci mollitia in. Inventore obcaecati perspiciatis natus dolor dicta, illo similique error a eos repudiandae doloremque cumque, aspernatur itaque? Nemo, perferendis nam repellat ab dignissimos non facere nihil voluptatum vitae fugiat tempora corporis facilis praesentium mollitia dolores amet illum laudantium explicabo voluptatem eveniet? Ipsam vero vitae rerum, ex dolor debitis pariatur id neque tenetur necessitatibus voluptate asperiores cupiditate a obcaecati distinctio iusto quae doloribus alias? Fugit doloremque tempora earum culpa.</p>
+    </div>
+    <div id="tab3" class="tabContent">
+        <h2>Tab 3 İçerik</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, porro eius pariatur bea</p>
+    </div>
+    <div id="tab4" class="tabContent">
+        <h2>Tab 4 İçerik</h2>
+        <p>Lorem ipsum dolor sit amet mollitia non voluptatum accusantium veniam sapiente, minima ullam? Eaque, laboriosam praesentium?</p>
+    </div>
+    
+<!-------------------------------------------------------------------------------------------------->
+    <!--Javascript tab Menu Javascript start-->
+    <script type="text/javascript" language="javascript">
+        function openTab(tabId, elemnt) {
+            var i, tabContent, tabButton;
+
+            /*Tüm İçerik alanlarını gizleme*/
+            tabContent = document.getElementsByClassName("tabContent");
+            for( var i = 0; i < tabContent.length; i++){
+                tabContent[i].style.display="none";
+            }
+
+            /*Tab butonun arkaplan rengini silme*/
+            tabButton = document.getElementsByClassName("tabButton");
+            for(var i =0; i < tabButton.length; i++){
+                tabButton[i].style.backgroundColor ="";
+            }
+
+            /*Seçili içerik alanını gösterme ve seçili tab buttonuna özellik verme*/
+            document.getElementById(tabId).style.display="block";
+            elemnt.style.backgroundColor="#504f4f";
+
+        }
+        /*Sayfa açıldıgında açık gelen ilk tab*/
+        document.getElementById("defaultOpen").click();
+    </script>
+   
