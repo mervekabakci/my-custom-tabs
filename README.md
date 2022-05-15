@@ -131,7 +131,6 @@ Not: Javascript kullanarak bir tab yapmak istiyorsak aşağıdaki kod satırlar�
         color:gray;
     }
     .myTabs .tabsContent .tabContent{
-        height: 300px;
         padding:10px 20px;
         display:none;
         font-size: 14px;
