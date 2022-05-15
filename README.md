@@ -1,5 +1,8 @@
 # my-custom-tabs
+1. **HTML & CSS**
+2. **HTML & CSS & JAVASCRIPT**
 
+<------------------------------------------------------------------------------------>
 1. **HTML & CSS**
 
 Html Örnek için klasör içerisindeki 01-only-html-css.html dosyasını inceleyebilirsiniz. 
@@ -89,7 +92,7 @@ Aşağıdaki kod yapısını html kodunuzun içerisine entegre edelim.
     </div>
 
 
-
+<------------------------------------------------------------------------------------------------------->
 
 
 2. **HTML & CSS & JAVASCRIPT**
