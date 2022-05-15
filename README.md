@@ -5,6 +5,8 @@
    **-2.1. Versiyon 1**
    
    **-2.1. Versiyon 2**
+   
+3. **jQuery tab örneği için dosya içerisindeki ilgili sayfaya göz atabilirsiniz.**
 
 <------------------------------------------------------------------------------------>
 1. **HTML & CSS**
